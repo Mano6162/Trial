@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Shop</h1>
+        <span><b>Cart</b> </span>
+    </header>
+<div class="container">
+    <!--PRODUCTS   -->
+    <div class="products">
+      <div class="product-card">
+    <img src="Images/smartphone.jfif" alt="Phone">
+    <h3>Smart Phone</h3>
+    <p class="price">$10000  </p>
+    <button onclick="addToCart('Smartphone', 10000)">Add to Cart</button>
+</div>
+<div class="product-card">
+    <img src="Images/headphone.jfif" alt="Headphone">
+    <h3>Headphones</h3>
+    <p class="price"> $2000 </p>
+    <button onclick="addToCart('Headphone', 2000)">Add to Cart</button>
+</div>
+<div class="product-card">
+    <img src="Images/smartwatch.jfif" alt="Watch">
+    <h3>Smart Watch</h3>
+    <p class="price">$3500</p>
+    <button onclick="addToCart('Smart Watch', 3500)">Add to Cart</button>
+</div>
+</div>
+<!-- CART  -->
+<div class="cart">
+    <h2> Your Cart </h2>
+ <ul id="cartItems"> </ul>
+ <div class="total-box">
+    Total: $<span id="total">0</span>
+ </div>
+ </div>
+ </div>
+ <script src="scripts.js"></script>
+</body>
+</html>
